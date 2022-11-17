@@ -1,9 +1,8 @@
 import BigNumber from "bignumber.js";
 import { Pie, PieChart } from "recharts";
-import { usePositions } from "../../hooks/use-positions";
 
 export function PositionPieChart() {
-  const { data, error, isLoading } = usePositions();
+  const { data, error, isLoading } = useVault();
 
   if (isLoading) return <>Loading..</>;
   

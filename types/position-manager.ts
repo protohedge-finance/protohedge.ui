@@ -14,7 +14,7 @@ export interface TokenAllocation {
 }
 
 export interface PositionManager {
-  address: string;
+  positionManagerAddress: string;
   positionWorth: BigNumber;
   costBasis: BigNumber;
   pnl: BigNumber;
@@ -24,7 +24,7 @@ export interface PositionManager {
 }
 
 export interface PositionManagerResponseDto {
-  address: string;
+  positionManagerAddress: string;
   positionWorth: string;
   costBasis: string;
   pnl: string;
